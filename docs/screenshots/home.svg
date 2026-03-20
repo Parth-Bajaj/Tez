@@ -1,0 +1,9 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1280" height="720" fill="#fff8ef"/>
+  <rect x="60" y="40" width="1160" height="90" rx="26" fill="#ffffff" stroke="#172033" opacity="0.85"/>
+  <rect x="60" y="160" width="1160" height="180" rx="34" fill="#ffffff" stroke="#172033"/>
+  <rect x="60" y="380" width="560" height="260" rx="28" fill="#ffffff" stroke="#172033"/>
+  <rect x="660" y="380" width="560" height="260" rx="28" fill="#ffffff" stroke="#172033"/>
+  <text x="100" y="215" font-size="52" font-family="Georgia, serif" fill="#172033">Tez Home</text>
+  <text x="100" y="270" font-size="24" font-family="Arial, sans-serif" fill="#536074">Short-form news, prediction badges, and verification entry points.</text>
+</svg>

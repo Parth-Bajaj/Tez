@@ -1,0 +1,17 @@
+[
+  {
+    "id": "n1",
+    "title": "City launches public dashboard to track fact-checked civic updates",
+    "source": "Civic Ledger",
+    "prediction": "real",
+    "credibilityScore": 92
+  },
+  {
+    "id": "n2",
+    "title": "Viral post claims scientists found a pill that ends sleep permanently",
+    "source": "Signal Watch",
+    "prediction": "fake",
+    "credibilityScore": 33
+  }
+]
+

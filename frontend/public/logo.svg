@@ -1,0 +1,6 @@
+<svg width="220" height="64" viewBox="0 0 220 64" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Tez logo">
+  <rect width="220" height="64" rx="18" fill="#0B101B"/>
+  <circle cx="34" cy="32" r="14" fill="#FF7A59"/>
+  <path d="M30 32c0-2.4 1.9-4.3 4.3-4.3h4.2v4.7h-4.2a.4.4 0 0 0-.4.4c0 .2.2.4.4.4h5.8c2.4 0 4.3 1.9 4.3 4.3 0 2.4-1.9 4.3-4.3 4.3h-6.8v-4.7H40a.4.4 0 0 0 .4-.4.4.4 0 0 0-.4-.4h-5.8A4.3 4.3 0 0 1 30 32Z" fill="#FFF6E8"/>
+  <text x="62" y="39" fill="#FFF6E8" font-family="Georgia, serif" font-size="30" font-weight="700">Tez</text>
+</svg>

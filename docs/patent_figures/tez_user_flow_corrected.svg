@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="920" viewBox="0 0 1600 920">
+  <defs>
+    <style>
+      .bg { fill: #0d1117; }
+      .title { fill: #f5f7fb; font: 700 28px Arial, sans-serif; }
+      .subtitle { fill: #9fb0c5; font: 400 16px Arial, sans-serif; }
+      .section { font: 700 24px Arial, sans-serif; }
+      .box { fill: #161b22; stroke-width: 3; rx: 20; ry: 20; }
+      .boxtext { fill: #f5f7fb; font: 700 21px Arial, sans-serif; text-anchor: middle; }
+      .subtext { fill: #9fb0c5; font: 400 14px Arial, sans-serif; text-anchor: middle; }
+      .legend { fill: #0f1721; stroke-width: 2; rx: 10; ry: 10; }
+      .legendtext { fill: #dbe5f1; font: 600 16px Arial, sans-serif; text-anchor: middle; }
+      .arrow-blue { stroke: #54a8ff; }
+      .arrow-gold { stroke: #ffd84d; }
+      .arrow-orange { stroke: #ff9b45; }
+      .arrow-green { stroke: #31d0aa; }
+      .arrow-purple { stroke: #9e7bff; }
+      .separator { stroke: #253042; stroke-width: 2; stroke-dasharray: 8 8; }
+    </style>
+    <marker id="arrowBlue" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#54a8ff"/>
+    </marker>
+    <marker id="arrowGold" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#ffd84d"/>
+    </marker>
+    <marker id="arrowOrange" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#ff9b45"/>
+    </marker>
+    <marker id="arrowGreen" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#31d0aa"/>
+    </marker>
+    <marker id="arrowPurple" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#9e7bff"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" width="1600" height="920"/>
+
+  <text x="800" y="52" class="title" text-anchor="middle">Tez User Flow Diagram</text>
+  <text x="800" y="82" class="subtitle" text-anchor="middle">Patent-ready operational flow aligned to the TezNews project</text>
+
+  <line x1="530" y1="120" x2="530" y2="760" class="separator"/>
+  <line x1="1068" y1="120" x2="1068" y2="760" class="separator"/>
+
+  <text x="270" y="120" class="section" fill="#8a78ff" text-anchor="middle">REGULAR USER</text>
+  <text x="800" y="120" class="section" fill="#ffd84d" text-anchor="middle">VERIFY FLOW</text>
+  <text x="1335" y="120" class="section" fill="#ff9b45" text-anchor="middle">ADMIN FLOW</text>
+
+  <rect x="90" y="150" width="360" height="96" class="box" stroke="#7c6dff"/>
+  <text x="270" y="206" class="boxtext">Open Tez App</text>
+
+  <rect x="90" y="290" width="360" height="110" class="box" stroke="#7c6dff"/>
+  <text x="270" y="345" class="boxtext">Browse News Feed</text>
+  <text x="270" y="373" class="subtext">Short-form news cards with score cues</text>
+
+  <rect x="90" y="442" width="360" height="112" class="box" stroke="#31d0aa"/>
+  <text x="270" y="495" class="boxtext">Open Full Article</text>
+  <text x="270" y="525" class="subtext">Prediction badge and credibility meter shown</text>
+
+  <rect x="90" y="596" width="360" height="96" class="box" stroke="#31d0aa"/>
+  <text x="270" y="652" class="boxtext">Save, Share, or Report</text>
+
+  <line x1="270" y1="246" x2="270" y2="290" stroke="#54a8ff" stroke-width="4" marker-end="url(#arrowBlue)"/>
+  <line x1="270" y1="400" x2="270" y2="442" stroke="#54a8ff" stroke-width="4" marker-end="url(#arrowBlue)"/>
+  <line x1="270" y1="554" x2="270" y2="596" stroke="#31d0aa" stroke-width="4" marker-end="url(#arrowGreen)"/>
+
+  <rect x="620" y="150" width="360" height="96" class="box" stroke="#ffd84d"/>
+  <text x="800" y="206" class="boxtext">Open Verify Page</text>
+
+  <rect x="620" y="290" width="360" height="112" class="box" stroke="#ffd84d"/>
+  <text x="800" y="342" class="boxtext">Enter Story Hash</text>
+  <text x="800" y="372" class="subtext">Optional transaction hash may also be entered</text>
+
+  <rect x="620" y="444" width="360" height="104" class="box" stroke="#9e7bff"/>
+  <text x="800" y="500" class="boxtext">Query Verification Service</text>
+  <text x="800" y="528" class="subtext">Backend checks ledger record and match status</text>
+
+  <rect x="574" y="594" width="200" height="98" class="box" stroke="#31d0aa"/>
+  <text x="674" y="652" class="boxtext">Verified</text>
+
+  <rect x="826" y="594" width="200" height="98" class="box" stroke="#ff5f7d"/>
+  <text x="926" y="652" class="boxtext">Not Found</text>
+
+  <line x1="800" y1="246" x2="800" y2="290" stroke="#ffd84d" stroke-width="4" marker-end="url(#arrowGold)"/>
+  <line x1="800" y1="402" x2="800" y2="444" stroke="#9e7bff" stroke-width="4" marker-end="url(#arrowPurple)"/>
+  <line x1="800" y1="548" x2="674" y2="594" stroke="#31d0aa" stroke-width="4" marker-end="url(#arrowGreen)"/>
+  <line x1="800" y1="548" x2="926" y2="594" stroke="#ff5f7d" stroke-width="4" marker-end="url(#arrowOrange)"/>
+
+  <rect x="1155" y="150" width="360" height="96" class="box" stroke="#ff9b45"/>
+  <text x="1335" y="206" class="boxtext">Admin Login</text>
+
+  <rect x="1155" y="288" width="360" height="104" class="box" stroke="#ff9b45"/>
+  <text x="1335" y="342" class="boxtext">Admin Dashboard</text>
+  <text x="1335" y="370" class="subtext">News, reports, and activity overview</text>
+
+  <rect x="1155" y="434" width="360" height="96" class="box" stroke="#54a8ff"/>
+  <text x="1335" y="490" class="boxtext">Upload Article</text>
+
+  <rect x="1155" y="572" width="360" height="112" class="box" stroke="#31d0aa"/>
+  <text x="1335" y="624" class="boxtext">Auto Predict and Score</text>
+  <text x="1335" y="654" class="subtext">Hash registered in ledger before publishing</text>
+
+  <rect x="1155" y="726" width="170" height="92" class="box" stroke="#31d0aa"/>
+  <text x="1240" y="782" class="boxtext">Publish</text>
+
+  <rect x="1345" y="726" width="170" height="92" class="box" stroke="#ff6b7f"/>
+  <text x="1430" y="782" class="boxtext">Review Reports</text>
+
+  <line x1="1335" y1="246" x2="1335" y2="288" stroke="#ff9b45" stroke-width="4" marker-end="url(#arrowOrange)"/>
+  <line x1="1335" y1="392" x2="1335" y2="434" stroke="#54a8ff" stroke-width="4" marker-end="url(#arrowBlue)"/>
+  <line x1="1335" y1="530" x2="1335" y2="572" stroke="#31d0aa" stroke-width="4" marker-end="url(#arrowGreen)"/>
+  <line x1="1295" y1="684" x2="1240" y2="726" stroke="#31d0aa" stroke-width="4" marker-end="url(#arrowGreen)"/>
+  <line x1="1375" y1="684" x2="1430" y2="726" stroke="#ff9b45" stroke-width="4" marker-end="url(#arrowOrange)"/>
+
+  <rect x="100" y="838" width="250" height="44" class="legend" stroke="#7c6dff"/>
+  <text x="225" y="866" class="legendtext">Frontend / User Action</text>
+  <rect x="390" y="838" width="250" height="44" class="legend" stroke="#54a8ff"/>
+  <text x="515" y="866" class="legendtext">Backend / Service Call</text>
+  <rect x="680" y="838" width="250" height="44" class="legend" stroke="#9e7bff"/>
+  <text x="805" y="866" class="legendtext">ML / Credibility Analysis</text>
+  <rect x="970" y="838" width="250" height="44" class="legend" stroke="#ffd84d"/>
+  <text x="1095" y="866" class="legendtext">Hash / Ledger Verification</text>
+  <rect x="1260" y="838" width="250" height="44" class="legend" stroke="#31d0aa"/>
+  <text x="1385" y="866" class="legendtext">Success / Published State</text>
+</svg>

@@ -1,0 +1,11 @@
+<svg width="1200" height="720" viewBox="0 0 1200 720" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="720" fill="#f7eedf"/>
+  <rect x="100" y="120" width="1000" height="480" rx="34" fill="#fffaf2" stroke="#172033"/>
+  <path d="M220 470C320 290 430 420 540 250C650 80 760 450 910 220" fill="none" stroke="#cb3f45" stroke-width="18" stroke-linecap="round"/>
+  <circle cx="220" cy="470" r="24" fill="#cb3f45"/>
+  <circle cx="540" cy="250" r="24" fill="#cb3f45"/>
+  <circle cx="910" cy="220" r="24" fill="#cb3f45"/>
+  <text x="170" y="210" font-size="46" font-family="Georgia, serif" fill="#172033">Payment freeze rumor</text>
+  <text x="170" y="260" font-size="22" font-family="Arial, sans-serif" fill="#536074">Panic-style messaging without any official source notice.</text>
+</svg>
+

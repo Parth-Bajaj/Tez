@@ -1,0 +1,9 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1280" height="720" fill="#fff8ef"/>
+  <rect x="40" y="40" width="250" height="640" rx="28" fill="#ffffff" stroke="#172033"/>
+  <rect x="330" y="40" width="890" height="150" rx="28" fill="#ffffff" stroke="#172033"/>
+  <rect x="330" y="220" width="520" height="460" rx="28" fill="#ffffff" stroke="#172033"/>
+  <rect x="880" y="220" width="340" height="460" rx="28" fill="#ffffff" stroke="#172033"/>
+  <text x="370" y="110" font-size="48" font-family="Georgia, serif" fill="#172033">Admin Dashboard</text>
+  <text x="370" y="160" font-size="22" font-family="Arial, sans-serif" fill="#536074">Stats, upload form, and report monitoring.</text>
+</svg>

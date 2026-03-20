@@ -1,0 +1,9 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1280" height="720" fill="#fff8ef"/>
+  <rect x="60" y="50" width="520" height="580" rx="28" fill="#ffffff" stroke="#172033"/>
+  <rect x="620" y="50" width="600" height="220" rx="28" fill="#ffffff" stroke="#172033"/>
+  <rect x="620" y="300" width="600" height="330" rx="28" fill="#ffffff" stroke="#172033"/>
+  <text x="100" y="130" font-size="48" font-family="Georgia, serif" fill="#172033">Verify Page</text>
+  <text x="100" y="180" font-size="22" font-family="Arial, sans-serif" fill="#536074">Story hash input, status panel, and recent ledger entries.</text>
+</svg>
+

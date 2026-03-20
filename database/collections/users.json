@@ -1,0 +1,14 @@
+[
+  {
+    "id": "admin-1",
+    "name": "Admin User",
+    "email": "admin@tez.app",
+    "role": "admin"
+  },
+  {
+    "id": "reader-1",
+    "name": "Reader One",
+    "email": "reader@tez.app",
+    "role": "reader"
+  }
+]

@@ -1,0 +1,32 @@
+{
+  "users": [
+    {
+      "id": "admin-1",
+      "name": "Admin User",
+      "email": "admin@tez.app",
+      "role": "admin"
+    }
+  ],
+  "news": [
+    {
+      "id": "n1",
+      "title": "City launches public dashboard to track fact-checked civic updates",
+      "prediction": "real",
+      "credibilityScore": 92
+    }
+  ],
+  "reports": [
+    {
+      "id": "r1",
+      "newsId": "n2",
+      "reason": "Medical misinformation",
+      "status": "pending"
+    }
+  ],
+  "bookmarks": [
+    {
+      "userId": "admin-1",
+      "newsId": "n1"
+    }
+  ]
+}

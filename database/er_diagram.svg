@@ -1,0 +1,31 @@
+<svg width="980" height="420" viewBox="0 0 980 420" xmlns="http://www.w3.org/2000/svg">
+  <rect width="980" height="420" fill="#fff8ef"/>
+  <g font-family="Arial, sans-serif">
+    <rect x="40" y="60" width="180" height="140" rx="16" fill="#ffffff" stroke="#172033"/>
+    <text x="60" y="95" font-size="22" fill="#172033">users</text>
+    <text x="60" y="125" font-size="14" fill="#536074">id</text>
+    <text x="60" y="148" font-size="14" fill="#536074">email</text>
+    <text x="60" y="171" font-size="14" fill="#536074">role</text>
+    <text x="60" y="194" font-size="14" fill="#536074">created_at</text>
+    <rect x="400" y="40" width="220" height="180" rx="16" fill="#ffffff" stroke="#172033"/>
+    <text x="420" y="75" font-size="22" fill="#172033">news</text>
+    <text x="420" y="105" font-size="14" fill="#536074">id</text>
+    <text x="420" y="128" font-size="14" fill="#536074">title</text>
+    <text x="420" y="151" font-size="14" fill="#536074">prediction</text>
+    <text x="420" y="174" font-size="14" fill="#536074">story_hash</text>
+    <text x="420" y="197" font-size="14" fill="#536074">tx_hash</text>
+    <rect x="740" y="70" width="180" height="130" rx="16" fill="#ffffff" stroke="#172033"/>
+    <text x="760" y="105" font-size="22" fill="#172033">reports</text>
+    <text x="760" y="135" font-size="14" fill="#536074">id</text>
+    <text x="760" y="158" font-size="14" fill="#536074">news_id</text>
+    <text x="760" y="181" font-size="14" fill="#536074">status</text>
+    <rect x="390" y="280" width="220" height="100" rx="16" fill="#ffffff" stroke="#172033"/>
+    <text x="410" y="315" font-size="22" fill="#172033">bookmarks</text>
+    <text x="410" y="345" font-size="14" fill="#536074">user_id</text>
+    <text x="410" y="368" font-size="14" fill="#536074">news_id</text>
+    <line x1="220" y1="130" x2="400" y2="130" stroke="#FF7A59" stroke-width="4"/>
+    <line x1="620" y1="130" x2="740" y2="130" stroke="#1E9386" stroke-width="4"/>
+    <line x1="500" y1="220" x2="500" y2="280" stroke="#172033" stroke-width="4"/>
+  </g>
+</svg>
+

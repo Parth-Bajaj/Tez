@@ -11,3 +11,7 @@ ml/artifacts/*.pkl
 ml/artifacts/*.json
 blockchain/build/contracts/*.json
 
+.idea/
+*.safetensors
+model_pipeline/
+backend/ml_models/model_pipeline/

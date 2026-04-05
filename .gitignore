@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual/Conda envs
+.venv/
+venv/
+env/
+ENV/
+.conda/
+conda-meta/
+
+# Logs
+*.log
+*.err.log
+
+# Secrets / local config
+.env
+.env.*
+!.env.example
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Frontend / Node
+frontend/node_modules/
+frontend/dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Build/tool caches
+.cache/
+.DS_Store
+
+# Optional: large model artifacts (uncomment if you don't want to version them)
+# *.pkl
+# *.pt
+# *.safetensors
+# model_pipeline/
+# backend/ml_models/model_pipeline/

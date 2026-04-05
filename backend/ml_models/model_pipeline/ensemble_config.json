@@ -1,0 +1,7 @@
+{
+    "distilbert": 0.5,
+    "logistic": 0.2,
+    "naive_bayes": 0.1,
+    "random_forest": 0.1,
+    "lstm": 0.1
+}

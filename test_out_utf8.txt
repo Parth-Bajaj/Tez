@@ -1,0 +1,162 @@
+﻿============================= test session starts =============================
+platform win32 -- Python 3.13.7, pytest-9.0.2, pluggy-1.6.0
+rootdir: C:\Users\parth\Downloads\News App
+plugins: anyio-4.11.0, dash-3.2.0
+collected 2 items
+
+tests\test_inference.py FF                                               [100%]
+
+================================== FAILURES ===================================
+____________________________ test_inference_format ____________________________
+
+    def test_inference_format():
+        test_input = "Breaking: Government announces new policy to cut taxes for all by 50%!"
+    
+        # Run prediction
+>       result = predict(test_input)
+                 ^^^^^^^^^^^^^^^^^^^
+
+tests\test_inference.py:8: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+src\inference.py:166: in predict
+    return server.predict(text)
+           ^^^^^^^^^^^^^^^^^^^^
+src\inference.py:93: in predict
+    self.load_models()
+src\inference.py:54: in load_models
+    self.nb = joblib.load(os.path.join(self.model_dir, 'nb_model.pkl'))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+filename = 'model_pipeline\\nb_model.pkl', mmap_mode = None
+
+    def load(filename, mmap_mode=None):
+        """Reconstruct a Python object from a file persisted with joblib.dump.
+    
+        Read more in the :ref:`User Guide <persistence>`.
+    
+        WARNING: joblib.load relies on the pickle module and can therefore
+        execute arbitrary Python code. It should therefore never be used
+        to load files from untrusted sources.
+    
+        Parameters
+        ----------
+        filename: str, pathlib.Path, or file object.
+            The file object or path of the file from which to load the object
+        mmap_mode: {None, 'r+', 'r', 'w+', 'c'}, optional
+            If not None, the arrays are memory-mapped from the disk. This
+            mode has no effect for compressed files. Note that in this
+            case the reconstructed object might no longer match exactly
+            the originally pickled object.
+    
+        Returns
+        -------
+        result: any Python object
+            The object stored in the file.
+    
+        See Also
+        --------
+        joblib.dump : function to save an object
+    
+        Notes
+        -----
+    
+        This function can load numpy array files saved separately during the
+        dump. If the mmap_mode argument is given, it is passed to np.load and
+        arrays are loaded as memmaps. As a consequence, the reconstructed
+        object might not match the original pickled object. Note that if the
+        file was saved with compression, the arrays cannot be memmapped.
+        """
+        if Path is not None and isinstance(filename, Path):
+            filename = str(filename)
+    
+        if hasattr(filename, "read"):
+            fobj = filename
+            filename = getattr(fobj, 'name', '')
+            with _read_fileobject(fobj, filename, mmap_mode) as fobj:
+                obj = _unpickle(fobj)
+        else:
+>           with open(filename, 'rb') as f:
+                 ^^^^^^^^^^^^^^^^^^^^
+E           FileNotFoundError: [Errno 2] No such file or directory: 'model_pipeline\\nb_model.pkl'
+
+..\..\AppData\Local\Programs\Python\Python313\Lib\site-packages\joblib\numpy_pickle.py:650: FileNotFoundError
+---------------------------- Captured stdout call -----------------------------
+Loading models into memory...
+_________________________ test_inference_empty_string _________________________
+
+    def test_inference_empty_string():
+>       result = predict("   ")
+                 ^^^^^^^^^^^^^^
+
+tests\test_inference.py:30: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+src\inference.py:166: in predict
+    return server.predict(text)
+           ^^^^^^^^^^^^^^^^^^^^
+src\inference.py:93: in predict
+    self.load_models()
+src\inference.py:54: in load_models
+    self.nb = joblib.load(os.path.join(self.model_dir, 'nb_model.pkl'))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+filename = 'model_pipeline\\nb_model.pkl', mmap_mode = None
+
+    def load(filename, mmap_mode=None):
+        """Reconstruct a Python object from a file persisted with joblib.dump.
+    
+        Read more in the :ref:`User Guide <persistence>`.
+    
+        WARNING: joblib.load relies on the pickle module and can therefore
+        execute arbitrary Python code. It should therefore never be used
+        to load files from untrusted sources.
+    
+        Parameters
+        ----------
+        filename: str, pathlib.Path, or file object.
+            The file object or path of the file from which to load the object
+        mmap_mode: {None, 'r+', 'r', 'w+', 'c'}, optional
+            If not None, the arrays are memory-mapped from the disk. This
+            mode has no effect for compressed files. Note that in this
+            case the reconstructed object might no longer match exactly
+            the originally pickled object.
+    
+        Returns
+        -------
+        result: any Python object
+            The object stored in the file.
+    
+        See Also
+        --------
+        joblib.dump : function to save an object
+    
+        Notes
+        -----
+    
+        This function can load numpy array files saved separately during the
+        dump. If the mmap_mode argument is given, it is passed to np.load and
+        arrays are loaded as memmaps. As a consequence, the reconstructed
+        object might not match the original pickled object. Note that if the
+        file was saved with compression, the arrays cannot be memmapped.
+        """
+        if Path is not None and isinstance(filename, Path):
+            filename = str(filename)
+    
+        if hasattr(filename, "read"):
+            fobj = filename
+            filename = getattr(fobj, 'name', '')
+            with _read_fileobject(fobj, filename, mmap_mode) as fobj:
+                obj = _unpickle(fobj)
+        else:
+>           with open(filename, 'rb') as f:
+                 ^^^^^^^^^^^^^^^^^^^^
+E           FileNotFoundError: [Errno 2] No such file or directory: 'model_pipeline\\nb_model.pkl'
+
+..\..\AppData\Local\Programs\Python\Python313\Lib\site-packages\joblib\numpy_pickle.py:650: FileNotFoundError
+---------------------------- Captured stdout call -----------------------------
+Loading models into memory...
+=========================== short test summary info ===========================
+FAILED tests/test_inference.py::test_inference_format - FileNotFoundError: [E...
+FAILED tests/test_inference.py::test_inference_empty_string - FileNotFoundErr...
+============================== 2 failed in 5.79s ==============================

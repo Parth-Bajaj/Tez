@@ -44,3 +44,5 @@ pnpm-debug.log*
 *.safetensors
  # model_pipeline/
 backend/ml_models/model_pipeline/
+
+blockchain/node_modules/

@@ -38,9 +38,9 @@ pnpm-debug.log*
 .cache/
 .DS_Store
 
-# Optional: large model artifacts (uncomment if you don't want to version them)
-# *.pkl
-# *.pt
-# *.safetensors
-# model_pipeline/
-# backend/ml_models/model_pipeline/
+# large model artifacts
+ # *.pkl
+ # *.pt
+ *.safetensors
+ # model_pipeline/
+ # backend/ml_models/model_pipeline/

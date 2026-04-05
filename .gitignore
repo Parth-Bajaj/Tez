@@ -41,6 +41,6 @@ pnpm-debug.log*
 # large model artifacts
  # *.pkl
  # *.pt
- *.safetensors
+*.safetensors
  # model_pipeline/
- backend/ml_models/model_pipeline/
+backend/ml_models/model_pipeline/
